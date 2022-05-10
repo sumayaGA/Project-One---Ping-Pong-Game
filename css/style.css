@@ -1,0 +1,47 @@
+body {
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+
+#pongTable { 
+    background-color: black;
+    height: 400px; 
+    width: 800px; 
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+#player_paddle {
+    background-color: white;
+}
+
+#computer_paddle { 
+    background-color: white; 
+    right: 0%; 
+}
+
+#net {
+    border-left: 4px dotted white; 
+    height: 400px; 
+    position: absolute;
+    left: 50%;
+    top: 0%; 
+}
+.paddle {
+    height: 120px; 
+    width: 20px; 
+    position:absolute; 
+}
+
+
+#ball {
+    background-color:white; 
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0%;  
+    left: 40%; 
+}
