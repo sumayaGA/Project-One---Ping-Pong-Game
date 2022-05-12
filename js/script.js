@@ -34,7 +34,7 @@ function moveBall () {
 
 }
 
-// Get API Data 
+// Get API Data (displays in console)
 const promise = {
 	"async": true,
 	"crossDomain": true,
@@ -45,7 +45,7 @@ const promise = {
 		"X-RapidAPI-Key": "dd77245c2dmsh2b81e4a56e3cce7p1b2550jsn876a0af7b91f"
 	}
 };
-
+//Dispaly API data on screen
 $.ajax (promise).then (
     (data) => {
         console.log(data);
@@ -55,3 +55,14 @@ $.ajax (promise).then (
     (error) => {
         console.log ("bad request: ", error);
     });
+
+    //When button is clicked, quote fades in/out
+
+    let visible = true;
+function onClickButton() {
+    if( visible )
+        $('#quote').fadeOut();
+    else
+        $('#quote').fadeIn();
+    visible = !visible;
+};
