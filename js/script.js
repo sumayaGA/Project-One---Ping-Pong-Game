@@ -49,6 +49,8 @@ const promise = {
 $.ajax (promise).then (
     (data) => {
         console.log(data);
+        let html = `<p> "${data.quote}"</p> <p> Author: ${data.by}</p>`;
+            $('#quote').html(html);
     },
     (error) => {
         console.log ("bad request: ", error);
