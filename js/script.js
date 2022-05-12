@@ -29,4 +29,27 @@ $(document).ready(function() {
     }, 1000);
 });
 
+// Move ball
+function moveBall () {
 
+}
+
+// Get API Data 
+const promise = {
+	"async": true,
+	"crossDomain": true,
+	"url": "https://yusufnb-quotes-v1.p.rapidapi.com/widget/~einstein.json",
+	"method": "GET",
+	"headers": {
+		"X-RapidAPI-Host": "yusufnb-quotes-v1.p.rapidapi.com",
+		"X-RapidAPI-Key": "dd77245c2dmsh2b81e4a56e3cce7p1b2550jsn876a0af7b91f"
+	}
+};
+
+$.ajax (promise).then (
+    (data) => {
+        console.log(data);
+    },
+    (error) => {
+        console.log ("bad request: ", error);
+    });
