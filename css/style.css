@@ -45,3 +45,17 @@ body {
     top: 0%;  
     left: 40%; 
 }
+
+#quoteOTD {
+    position:absolute;
+    top:120%;
+    left:44%;
+    background-color: pink;
+    padding: 1%;
+    font-size: large;
+}
+
+#quote {
+    position: absolute;
+    top:140%;
+}
